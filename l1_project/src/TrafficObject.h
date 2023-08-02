@@ -29,9 +29,9 @@ public:
     virtual void simulate(){};
 
 protected:
-    ObjectType _type;                 // identifies the class type
-    int _id;                          // every traffic object has its own unique id
-    double _posX, _posY;              // vehicle position in pixels
+    ObjectType _type;                  // identifies the class type
+    int _id;                           // every traffic object has its own unique id
+    double _posX, _posY;               // vehicle position in pixels
     std::vector<std::thread> _threads; // holds all threads that have been launched within this object
 
 private:
